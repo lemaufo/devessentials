@@ -21,6 +21,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 import Link from "next/link"
+import { ModeToggle } from "./mode-toggle"
 
 // This is sample data.
 const data = {
@@ -91,8 +92,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <span className="font-medium">DevEssentials</span>
                   <span className="">v1.0.0</span>
                 </div>
+                
               </a>
             </SidebarMenuButton>
+            
           </SidebarMenuItem>
         </SidebarMenu>
         <SearchForm />

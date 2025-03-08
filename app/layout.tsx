@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/theme-provider"
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,6 +18,7 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import React from "react";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,10 +55,16 @@ export default function Page({children} : { children : React.ReactNode }
 
 ) {
   return (
-    <html lang="en">
+    <html lang="es" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
@@ -79,10 +87,16 @@ export default function Page({children} : { children : React.ReactNode }
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
+          <div className="flex justify-end">
+            <div>
+              <ModeToggle />
+            </div>
+          </div>
         </header>
         {children}
       </SidebarInset>
     </SidebarProvider>
+    </ThemeProvider>
     </body>
     </html>
   )

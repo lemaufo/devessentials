@@ -1,3 +1,4 @@
+
 function ColorsPage() {
     return (
         <div>Colores</div>
