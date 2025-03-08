@@ -29,132 +29,45 @@ const data = {
       url: "#",
       items: [
         {
-          title: "Installation",
+          title: "Inicio",
+          url: "#",
+          // isActive: true,
+        }
+      ],
+    },
+    {
+      title: "Front-End",
+      url: "#",
+      items: [
+        {
+          title: "Colores",
           url: "#",
         },
         {
-          title: "Project Structure",
+          title: "Componentes",
+          url: "#",
+          isActive: false,
+        },
+        {
+          title: "Frameworks",
+          url: "#",
+        },
+        {
+          title: "Iconos",
+          url: "#",
+        },
+        {
+          title: "Tipografía",
           url: "#",
         },
       ],
     },
     {
-      title: "Building Your Application",
+      title: "Comunidad",
       url: "#",
       items: [
         {
-          title: "Routing",
-          url: "#",
-        },
-        {
-          title: "Data Fetching",
-          url: "#",
-          isActive: true,
-        },
-        {
-          title: "Rendering",
-          url: "#",
-        },
-        {
-          title: "Caching",
-          url: "#",
-        },
-        {
-          title: "Styling",
-          url: "#",
-        },
-        {
-          title: "Optimizing",
-          url: "#",
-        },
-        {
-          title: "Configuring",
-          url: "#",
-        },
-        {
-          title: "Testing",
-          url: "#",
-        },
-        {
-          title: "Authentication",
-          url: "#",
-        },
-        {
-          title: "Deploying",
-          url: "#",
-        },
-        {
-          title: "Upgrading",
-          url: "#",
-        },
-        {
-          title: "Examples",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "API Reference",
-      url: "#",
-      items: [
-        {
-          title: "Components",
-          url: "#",
-        },
-        {
-          title: "File Conventions",
-          url: "#",
-        },
-        {
-          title: "Functions",
-          url: "#",
-        },
-        {
-          title: "next.config.js Options",
-          url: "#",
-        },
-        {
-          title: "CLI",
-          url: "#",
-        },
-        {
-          title: "Edge Runtime",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Architecture",
-      url: "#",
-      items: [
-        {
-          title: "Accessibility",
-          url: "#",
-        },
-        {
-          title: "Fast Refresh",
-          url: "#",
-        },
-        {
-          title: "Next.js Compiler",
-          url: "#",
-        },
-        {
-          title: "Supported Browsers",
-          url: "#",
-        },
-        {
-          title: "Turbopack",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Community",
-      url: "#",
-      items: [
-        {
-          title: "Contribution Guide",
+          title: "Guía de contribución",
           url: "#",
         },
       ],
@@ -174,7 +87,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <GalleryVerticalEnd className="size-4" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-medium">Documentation</span>
+                  <span className="font-medium">DevEssentials</span>
                   <span className="">v1.0.0</span>
                 </div>
               </a>
