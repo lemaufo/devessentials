@@ -20,55 +20,56 @@ import {
   SidebarMenuSubItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
+import Link from "next/link"
 
 // This is sample data.
 const data = {
   navMain: [
     {
       title: "Getting Started",
-      url: "#",
+      url: "/start",
       items: [
         {
           title: "Inicio",
-          url: "#",
+          url: "/start/home",
           // isActive: true,
         }
       ],
     },
     {
       title: "Front-End",
-      url: "#",
+      url: "",
       items: [
         {
           title: "Colores",
-          url: "#",
+          url: "/front-end/colors",
         },
         {
           title: "Componentes",
-          url: "#",
+          url: "/front-end/components",
           isActive: false,
         },
         {
-          title: "Frameworks",
-          url: "#",
-        },
-        {
           title: "Iconos",
-          url: "#",
+          url: "/front-end/icons",
         },
         {
-          title: "Tipografía",
-          url: "#",
+          title: "Frameworks",
+          url: "/front-end/frameworks",
+        },
+        {
+          title: "Fuentes",
+          url: "/front-end/fonts",
         },
       ],
     },
     {
       title: "Comunidad",
-      url: "#",
+      url: "",
       items: [
         {
           title: "Guía de contribución",
-          url: "#",
+          url: "/community/contribution-guide",
         },
       ],
     },
@@ -122,7 +123,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                               asChild
                               isActive={item.isActive}
                             >
-                              <a href={item.url}>{item.title}</a>
+                              <Link href={item.url}>{item.title}</Link>
                             </SidebarMenuSubButton>
                           </SidebarMenuSubItem>
                         ))}
