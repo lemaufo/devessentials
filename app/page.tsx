@@ -1,6 +1,6 @@
 function WelcomePage() {
   return (
-    <div>Welcome!!!</div>
+    <div>Bienvenido!!!</div>
   )
 }
 export default WelcomePage
