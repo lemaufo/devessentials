@@ -1,6 +1,13 @@
-function HomePage() {
-    return (
-        <div>Inicio</div>
-    )
+import {CoverDemo} from "../../../components/cover-text"
+
+export default function HomePage() {
+  return (
+    <main className="">
+      <div className="">
+          <CoverDemo
+            
+          />
+      </div>
+    </main>
+  )
 }
-export default HomePage
