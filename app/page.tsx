@@ -1,8 +1,13 @@
-function WelcomePage() {
+import {CoverDemo} from "../components/cover-text"
+
+export default function WelcomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
-      Bienvenido.
-    </div>
+    <main className="">
+      <div className="">
+          <CoverDemo
+            
+          />
+      </div>
+    </main>
   )
 }
-export default WelcomePage
