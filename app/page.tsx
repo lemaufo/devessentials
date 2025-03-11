@@ -1,3 +1,4 @@
+import { PlaceholdersAndVanishInputDemo } from "@/components/search"
 import {CoverDemo} from "../components/cover-text"
 import {GlowingEffectDemo} from "../components/glowing-effect"
 
@@ -8,7 +9,10 @@ export default function WelcomePage() {
           <CoverDemo   
           />
       </div>
-      <div className="mt-16 mb-8">
+      <div>
+        <PlaceholdersAndVanishInputDemo />
+      </div>
+      <div className="mt-10 mb-8">
           <GlowingEffectDemo />
       </div>
     </main>

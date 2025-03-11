@@ -21,7 +21,6 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 import Link from "next/link"
-import { ModeToggle } from "./mode-toggle"
 
 // This is sample data.
 const data = {
