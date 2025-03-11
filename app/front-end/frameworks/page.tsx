@@ -35,6 +35,7 @@ export default function Home() {
   return (
     <main className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Frameworks</h1>
+      <h2 className="mt-2 mb-8">Esta es una descripción del contenido de la sección Frameworks.</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((card, index) => (
           <Card

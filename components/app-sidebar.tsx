@@ -84,13 +84,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
-              <a href="#">
+              <a href="/">
                 <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
-                  <GalleryVerticalEnd className="size-4" />
+                  <GalleryVerticalEnd className="size-5" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
-                  <span className="font-medium">DevEssentials</span>
-                  <span className="">v1.0.0</span>
+                  <span className="font-medium text-xl">DevEssentials</span>
+                  {/* <span className="">v1.0.0</span> */}
                 </div>
                 
               </a>
